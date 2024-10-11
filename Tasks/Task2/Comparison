@@ -1,0 +1,20 @@
+Analysis of the Scores of VAE, GAN and Diffusion Model
+
+PSNR (Peak Signal-to-Noise Ratio):
+
+The GAN model has the highest PSNR (18.9526), indicating it provides the best image quality.
+The VAE follows with 12.1438, while the Diffusion model has a slightly higher PSNR than VAE at 13.2363, but still significantly lower than the GAN.
+
+MSE (Mean Squared Error):
+
+The GAN model also has the lowest MSE (0.0174), suggesting it has the least error in image reconstruction.
+The VAE has a higher MSE (0.0650) which is better than the Diffusion model (0.1899).
+
+SSIM (Structural Similarity Index):
+
+Again, the GAN model has the highest SSIM (0.6481), indicating it preserves the structural integrity of images better than both the VAE and Diffusion models.
+The VAE shows a modest SSIM (0.1592), while the Diffusion model has a very low SSIM (0.0002), indicating poor structural similarity.
+
+Conclusion
+Based on the average values of scores of models made by me, the GAN model is clearly the best choice for underwater image enhancement in my case, 
+as it outperforms both the VAE and Diffusion models in all key metrics (highest PSNR and SSIM, lowest MSE).
